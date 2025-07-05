@@ -133,7 +133,7 @@ public class WebSecurityConfig {
                 userRepository.save(seller1);
             }
 
-            if(!userRepository.existsByUsername("admin1")) {
+            if(!userRepository.existsByUsername("admin")) {
                 User admin = new User("admin", "admin@example.com", passwordEncoder.encode("adminpass"));
                 userRepository.save(admin);
             }
